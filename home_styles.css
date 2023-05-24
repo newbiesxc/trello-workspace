@@ -4,4 +4,9 @@
 }
 body {
   font-family: arial;
+  background: url(pic.jpg);
+  background-position: center;
+  background-size: center;
+  display: flex;
+  min-height: 100vh;
 }
