@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: arial;
+  font-family: "Charlie Text",sans-serif;
 }
 body {
-  background: url(pic.jpg);
-  background-position: cover;
-  background-size: center;
-  display: flex;
+  background: url(pic.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex; 
   min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 header {
   position: fixed;
@@ -17,7 +19,6 @@ header {
   left: 0;
   width: 100%;
   padding: 20px 100px;
-  background: red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,4 +55,35 @@ button {
 .navigation button:hover {
   background: #fff;
   color: #162938;
+}
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 4px;
+  transform-origin: right;
+  transform: scale(0);
+  transition: transform .5s;
+}
+.navigation a:hover::after {
+  transform: scale(1);
+  transform-origin: right;
+}
+.fingerprint-icon {
+  width: 50px;
+  height: 100px;
+  color: #fff;
+  font-family: "Charlie Text", sans-serif;
+}
+.hamburger {
+  display: none;
+  height: fit-content;
+  padding: 3px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .5s;
 }
