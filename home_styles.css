@@ -6,7 +6,7 @@
 }
 body {
   background: url(pic.jpg);
-  background-position: center;
+  background-position: cover;
   background-size: center;
   display: flex;
   min-height: 100vh;
@@ -27,16 +27,31 @@ header {
   font-size: 2em;
   color: #fff;
   user-select: none;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
+  margin-left: 40px;
 }
 button {
   height: 40px;
-  width: 150px;
+  width: 130px;
   padding: 6px 30px;
   font-size: 1.1em;
-  border: 2px solid #000;
-  border-radius: 10px;
+  border: 2px solid #fff;
+  border-radius: 6px;
   cursor: pointer;
+  margin-left: 50px;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  transition: .5s;
 }
-
+.navigation button:hover {
+  background: #fff;
+  color: #162938;
+}
