@@ -87,3 +87,6 @@ button {
   cursor: pointer;
   transition: .5s;
 }
+.wrapper {
+  color: #fff;
+}
